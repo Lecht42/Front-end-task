@@ -4,7 +4,7 @@ import minus from '../images/minus_Icon.png';
 import girlIcon from '../images/girl_Icon.png';
 import manIcon from '../images/man_Icon.png';
 
-const numberOfItems = 8;
+const numberOfItems = 7;
 
 var toggledItem, hasToggled = false;
 
@@ -90,19 +90,15 @@ class MoreInfo extends React.Component{
 		return Date.substr(0, 10);
 	}
 	
+	
 	render(){
-		var genderImg;
-		if(JSON.parse(this.props.gender) === "female") genderImg = girlIcon;
-		else genderImg = manIcon;
-		
-		
 		return(
 			<div>
 				<table className="genderTable">
 					<tbody>
 						<tr>
 							<td><h2>{JSON.parse(this.props.firstName)}</h2></td>
-							<td><img className="genderIcon" src={genderImg} alt="ERROR" /></td>
+							<td><img className="genderIcon" src={JSON.parse(this.props.gender) === "female" ?  manIcon :  girlIcon} alt="ERROR" /></td>
 						</tr>	
 					</tbody>
 				</table>
