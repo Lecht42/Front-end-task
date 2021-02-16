@@ -98,7 +98,7 @@ class MoreInfo extends React.Component{
 					<tbody>
 						<tr>
 							<td><h2>{JSON.parse(this.props.firstName)}</h2></td>
-							<td><img className="genderIcon" src={JSON.parse(this.props.gender) === "female" ?  manIcon :  girlIcon} alt="ERROR" /></td>
+							<td><img className="genderIcon" src={JSON.parse(this.props.gender) === "female" ?  girlIcon :  manIcon} alt="ERROR" /></td>
 						</tr>	
 					</tbody>
 				</table>
