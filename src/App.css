@@ -9,7 +9,7 @@ img {
 	width: 50%;
 }
 
-p {
+p, h1, h2 {
 	font-family: "Gill Sans", sans-serif;
 	font-size: 18px;
 	width: 10%;
@@ -17,10 +17,7 @@ p {
 }
 
 h1, h2 {
-	font-family: "Gill Sans", sans-serif;
-	font-size: 18px;
 	font-weight: bold;
-	display: inline;
 }
 
 h2 { 
